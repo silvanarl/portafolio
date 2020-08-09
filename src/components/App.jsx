@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './Home';
+import TechSkills from './TechSkills';
 import { NavBar, ButtonMenu } from './NavBar';
 
 const App = () => (
@@ -9,8 +10,8 @@ const App = () => (
       <NavBar />
     </header>
     <main>
-      <h1>Hola desde React!</h1>
       <section><Home /></section>
+      <section><TechSkills /></section>
     </main>
     <footer>
     </footer>

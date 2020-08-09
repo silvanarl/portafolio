@@ -10,7 +10,9 @@ export const ButtonMenu = () => {
   return (
     <div className="div-btn-menu">
       <span>MENU</span>
-      <button type="button" onClick={buttonToggle} className="btn-menu"><img className="icon-menu" src={Menu} alt="menu" /></button>
+      <div className="end">
+        <button type="button" onClick={buttonToggle} className="btn-menu"><img className="icon-menu" src={Menu} alt="menu" /></button>
+      </div>
     </div>
   );
 };
