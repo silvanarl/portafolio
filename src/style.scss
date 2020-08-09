@@ -11,10 +11,17 @@ body{
     background-color: $white;
 }
 .flex{
-    display: flex;
+    display: $flex;
+}
+.end{
+    align-items: flex-end;
+}
+.row{
+    flex-direction: row;
 }
 header {
     width: 100%;
+    position: fixed;
     nav {
         width: 80%;
         max-width: 1000px;
@@ -36,6 +43,50 @@ header {
         }   
     }   
 }
+
+header nav{
+    width: 60%;
+    height: 100%;
+    margin:0;
+    position: fixed;
+    left: -80%;
+    transition: .5s;
+}
+header nav.active {
+    left: 0;
+}
+header nav ul li{
+    display: block;
+    float: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+.div-btn-menu{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background: $blue;
+    padding: 15px 0 15px 0;
+    // -webkit-box-sizing: border-box;
+    // -moz-box-sizing: border-box;
+    // box-sizing: border-box;
+}
+.div-btn-menu span {
+    float: left;
+    font-size: 15px;
+    font-family: $font-rosario;
+    font-weight: bold;
+    color: $white;
+}
+.homeBackground{
+    width: 100%;
+    height: 70%;
+}
+.initBtn{
+    border: none;
+    background-color: transparent;
+}
+
+
 a:hover{
 background:rgb(197, 196, 196);
 color: rgb(27, 27, 27);
@@ -45,7 +96,7 @@ font-weight: bold;
     width: 25px;
 }
 .div-btn-menu {
-    display: none;
+    display: block;
 }
 .btn-menu{
     border:none;
@@ -56,38 +107,10 @@ font-weight: bold;
     border: $white solid 1px;
     left: 300px;
 }
-@media screen and (max-width:800px){
-    header nav{
-        width: 80%;
-        height: 100%;
-        margin:0;
-        position: fixed;
-        left: -80%;
-        transition: .5s;
-    }
-    header nav.active {
-        left: 0;
-    }
-    header nav ul li{
-        display: block;
-        float: none;
-        border-bottom: 1px solid rgba(255, 255, 255, .3);
-    }
-    .div-btn-menu{
-        display: block;
-        width: 100%;
-        height: 40px;
-        background: $blue;
-        padding: 15px;
-        // -webkit-box-sizing: border-box;
-        // -moz-box-sizing: border-box;
-        // box-sizing: border-box;
-    }
-    .div-btn-menu span {
-        float: left;
-        font-size: 15px;
-        font-family: $font-rosario;
-        font-weight: bold;
-        color: $white;
-    }
+.iconBlueKnow{
+    width: 60px;
+    height: 60px;
 }
+// @media screen and (min-width:900px){
+    
+// }
