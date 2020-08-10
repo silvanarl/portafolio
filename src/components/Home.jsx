@@ -1,5 +1,4 @@
 import React from 'react';
-import imgMobile from '../assets/front-mobile.png';
 import btnInit from '../assets/initButton.svg';
 
 const Home = () => {
@@ -7,10 +6,14 @@ const Home = () => {
     console.log('Hola mundo');
   };
   return (
-    <div>
-      <span>Hola</span>
-      <img src={imgMobile} alt="Fondo developer" className="homeBackground" />
-      <button type="button" className="initBtn" onClick={initBtn}><img src={btnInit} alt="boton seguir" /></button>
+    <div className="homeBackground">
+      <div className="column absolute">
+        <h1 className="rasa">Hola, soy Silvana</h1>
+        <h2 className="quicksand">front-end developer</h2>
+      </div>
+      <div className="divInitBtn column">
+        <button type="button" className="initBtn" onClick={initBtn}><img src={btnInit} alt="boton seguir" /></button>
+      </div>
     </div>
   );
 };
