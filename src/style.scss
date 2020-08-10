@@ -1,4 +1,7 @@
 $font-rosario: 'Rosario', sans-serif;
+$font-quicksand: 'Quicksand', regular, sans-serif;
+$font-rasa: 'Rasa', serif;
+$font-roboto: 'Roboto', sans-serif;
 $white: #fff;
 $blue: #3A4454;
 $flex: flex;
@@ -19,15 +22,41 @@ body{
 .row{
     flex-direction: row;
 }
+.column{
+    flex-direction: column;
+}
+.rasa{
+    font-family: $font-rasa;
+    color: #2F2E2E;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+
+}
+.quicksand{
+    color: #2F2E2E;
+    font-family: $font-quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+}
+.absolute{
+    position: absolute;
+}
 header {
-    width: 100%;
-    position: fixed;
     nav {
-        width: 80%;
-        max-width: 1000px;
-        margin: 20px auto;
+        width: 60%;
+        max-width: 250px;
+        margin-top: 55px;
         background: $blue;
         font-family: $font-rosario;
+        position: fixed;
+        left: -80%;
+        transition: .5s;
         ul {
             overflow: hidden;
             list-style: none;
@@ -44,14 +73,6 @@ header {
     }   
 }
 
-header nav{
-    width: 60%;
-    height: 100%;
-    margin:0;
-    position: fixed;
-    left: -80%;
-    transition: .5s;
-}
 header nav.active {
     left: 0;
 }
@@ -61,31 +82,49 @@ header nav ul li{
     border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
 .div-btn-menu{
-    display: block;
+    position: fixed;
+    z-index: 1;
     width: 100%;
     height: 40px;
     background: $blue;
     padding: 15px 0 15px 0;
-    // -webkit-box-sizing: border-box;
-    // -moz-box-sizing: border-box;
+    //  -webkit-box-sizing: border-box;
+    //  -moz-box-sizing: border-box;
     // box-sizing: border-box;
 }
-.div-btn-menu span {
-    float: left;
+.span{
     font-size: 15px;
     font-family: $font-rosario;
     font-weight: bold;
     color: $white;
 }
 .homeBackground{
+    width: 100vw;
+    height: 500px;
+    display: $flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    
+}
+.homeBackground:before{
+    content: '';
     width: 100%;
-    height: 70%;
+    height: 500px;
+    position: absolute;
+    background-position: center;
+    background-image: url(./assets/front-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .initBtn{
     border: none;
     background-color: transparent;
 }
-
+.divInitBtn{
+    position: absolute;
+}
 
 a:hover{
 background:rgb(197, 196, 196);
@@ -95,22 +134,45 @@ font-weight: bold;
 .icon-menu{
     width: 25px;
 }
-.div-btn-menu {
-    display: block;
-}
 .btn-menu{
-    border:none;
     background-color: transparent;
     cursor: pointer;
     position: absolute;
     padding: 5px;
     border: $white solid 1px;
-    left: 300px;
 }
 .iconBlueKnow{
     width: 60px;
     height: 60px;
 }
-// @media screen and (min-width:900px){
-    
-// }
+.divTechSkills{
+    justify-content: space-around;
+}
+.spanSkills{
+    font-family: $font-roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+.myPhoto{
+    width: 175px;
+    height: 175px;
+    border: 5px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 200px;
+}
+.myName{
+    font-family: $font-rosario;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+@media screen and (min-width: 400px){
+    .homeBackground:before{
+        background-image: url(./assets/front-desktop.png);
+    }
+}
