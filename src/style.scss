@@ -1,5 +1,5 @@
 $font-rosario: 'Rosario', sans-serif;
-$font-quicksand: 'Quicksand', regular, sans-serif;
+$font-quicksand: 'Quicksand', sans-serif;
 $font-rasa: 'Rasa', serif;
 $font-roboto: 'Roboto', sans-serif;
 $white: #fff;
@@ -40,8 +40,8 @@ body{
     font-family: $font-quicksand;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
-    line-height: 27px;
+    font-size: 18px;
+    line-height: 25px;
     text-align: center;
 }
 .absolute{
@@ -49,12 +49,13 @@ body{
 }
 header {
     nav {
+        position: fixed;
+        top: 0;
         width: 60%;
         max-width: 250px;
         margin-top: 55px;
         background: $blue;
         font-family: $font-rosario;
-        position: fixed;
         left: -80%;
         transition: .5s;
         ul {
@@ -75,6 +76,7 @@ header {
 
 header nav.active {
     left: 0;
+    transition: left .5s;
 }
 header nav ul li{
     display: block;
@@ -108,6 +110,9 @@ header nav ul li{
     box-sizing: border-box;
     
 }
+.divHome{
+    top: 180px;
+}
 .homeBackground:before{
     content: '';
     width: 100%;
@@ -117,13 +122,18 @@ header nav ul li{
     background-image: url(./assets/front-mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
+    filter: grayscale(0.2)
 }
 .initBtn{
     border: none;
     background-color: transparent;
-}
-.divInitBtn{
     position: absolute;
+    top: 310px;
+    left: 150px;
+}
+.divInitButton{
+    width: 100px;
+    margin: 0 auto;
 }
 
 a:hover{
@@ -146,6 +156,9 @@ font-weight: bold;
     height: 60px;
 }
 .divTechSkills{
+    display: $flex;
+    min-width: 320px;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .spanSkills{
@@ -156,23 +169,98 @@ font-weight: bold;
     line-height: 19px;
 }
 .myPhoto{
-    width: 175px;
-    height: 175px;
+    width: 190px;
+    height: 190px;
     border: 5px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 200px;
+    margin:auto;
 }
-.myName{
+.textCenter{
     font-family: $font-rosario;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 30px;
+    line-height: 27px;
     text-align: center;
+}
+.paragraph{
+    text-align: justify;
+    padding: 5px 35px 5px 35px;
+}
+.listOfSkills{
+    min-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.divBySkill{
+    width: 110px;
+    display: flex;
+    align-items: center;
+}
+.mrgSoftSkill{
+    margin: 15px 20px 40px;;
+}
+.mrgnTechSkill{
+    margin: 15px 20px;
+}
+.spanBySkill{
+    font-size: 1em;
+    font-family: $font-quicksand;
+    text-align: center;
+}
+.mrg20{
+    margin:20px;
+}
+.marginCont{
+    margin-top:50px;
+}
+.projectsDiv{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 30px 15px 45px;
+}
+.project{
+    width: 120px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.projectImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.buttonDemo{
+    width: 43px;
+    height: 28px;
+    margin:5px;
+    background-color: $white;
+    font-family: $font-rosario;
+    color:$blue;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 2px solid $blue;
+    font-weight: bold;
+}
+.iconContact{
+    width: 40px;
+    height: 50px;
 }
 
 @media screen and (min-width: 400px){
     .homeBackground:before{
         background-image: url(./assets/front-desktop.png);
+    }
+    .rasa{
+        font-size: 68px;
+        padding: 15px;
+    }
+    .quicksand{
+        font-size: 36px;
+    }
+    .divHome {
+        top: 160px;
+        right: 280px;
     }
 }
