@@ -5,16 +5,28 @@ import iconTeamWork from '../assets/softSkills/teamWork.svg';
 import iconUncertainty from '../assets/softSkills/uncertaintyManagement.svg';
 
 const Soft = () => (
-  <div>
-    <span>HABILIDADES</span>
-    <img src={iconSelfTaught} alt="Autodidacta" className="" />
-    <span className="spanSkills">AUTODIDACTA</span>
-    <img src={iconTeamWork} alt="Trabajo colaborativo" className="" />
-    <span className="spanSkills">TRABAJO COLABORATIVO</span>
-    <img src={iconProblemSolving} alt="Resolución de problemas" className="" />
-    <span className="spanSkills">RESOLUCIÓN DE PROBLEMAS</span>
-    <img src={iconUncertainty} alt="Manejo de incertidumbre" className="" />
-    <span className="spanSkills">MANEJO DE INCERTIDUMBRE</span>
+  <div id="skills" className="flex column marginCont">
+    <div className="mrg20">
+      <p className="textCenter">HABILIDADES</p>
+    </div>
+    <div className="listOfSkills">
+      <div className="column divBySkill mrgSoftSkill">
+        <img src={iconSelfTaught} alt="Autodidacta" className="" />
+        <span className="spanBySkill">AUTODIDACTA</span>
+      </div>
+      <div className="column divBySkill mrgSoftSkill">
+        <img src={iconTeamWork} alt="Trabajo colaborativo" className="" />
+        <span className="spanBySkill">TRABAJO COLABORATIVO</span>
+      </div>
+      <div className="column divBySkill mrgSoftSkill">
+        <img src={iconProblemSolving} alt="Resolución de problemas" className="" />
+        <span className="spanBySkill">RESOLUCIÓN DE PROBLEMAS</span>
+      </div>
+      <div className="column divBySkill mrgSoftSkill">
+        <img src={iconUncertainty} alt="Manejo de incertidumbre" className="" />
+        <span className="spanBySkill">MANEJO DE INCERTIDUMBRE</span>
+      </div>
+    </div>
   </div>
 );
 

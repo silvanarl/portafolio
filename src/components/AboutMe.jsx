@@ -2,14 +2,17 @@ import React from 'react';
 import myPhoto from '../assets/myPhoto.png';
 
 const About = () => (
-  <div className="homeMobile">
-    <div>
+  <div id="about" className="homeMobile marginCont">
+    <div className="mrg20">
+      <p className="textCenter">ACERCA DE MI</p>
+    </div>
+    <div className="divPhoto flex">
       <img src={myPhoto} className="myPhoto" alt="Silvana Ramos" />
     </div>
-    <span className="myName">SILVANA RAMOS LESCANO</span>
-    <p>Desarrolladora Front-end, con background en administración y contabilidad.</p>
-    <p>Encontré en la tecnología un lugar donde puedo estar en aprendizaje constante y desarrollar habilidades como ser autodidacta, el análisis, desarrollo ágil y resolución de problemas con enfoques innovadores.</p> 
-    <p>Quiero crear productos digitales que sean soluciones a problemas y situaciones reales y que estos lleguen a impactar en la vida de las personas, seguir aprendiendo herramientas tecnológicas y ser full-stack en el futuro.</p>
+    <div>
+      <p className="paragraph quicksand">Front-end developer con background en contabilidad.</p>
+      <p className="paragraph quicksand">Encontré en la tecnología un lugar donde puedo estar en aprendizaje constante, desarrollarme como autodidacta y trabajar bajo metodologías ágiles. Quiero crear productos digitales que sean soluciones a situaciones reales y que estos lleguen a impactar en la vida de las personas. </p>
+    </div>
   </div>
 );
 
