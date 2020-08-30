@@ -1,10 +1,6 @@
-$font-rosario: 'Rosario', sans-serif;
-$font-quicksand: 'Quicksand', sans-serif;
-$font-rasa: 'Rasa', serif;
-$font-roboto: 'Roboto', sans-serif;
-$white: #fff;
-$blue: #3A4454;
-$flex: flex;
+@import 'variables';
+@import 'header';
+
 
 *{
     margin:0;
@@ -15,6 +11,9 @@ body{
 }
 .flex{
     display: $flex;
+}
+.center{
+    justify-content: center;
 }
 .end{
     align-items: flex-end;
@@ -47,53 +46,7 @@ body{
 .absolute{
     position: absolute;
 }
-header {
-    nav {
-        position: fixed;
-        top: 0;
-        width: 60%;
-        max-width: 250px;
-        margin-top: 55px;
-        background: $blue;
-        font-family: $font-rosario;
-        left: -80%;
-        transition: .5s;
-        ul {
-            overflow: hidden;
-            list-style: none;
-            li {
-                float: left;    
-                a {
-                color: $white;
-                padding: 20px;
-                display: block;
-                text-decoration: none;
-                }
-            } 
-        }   
-    }   
-}
 
-header nav.active {
-    left: 0;
-    transition: left .5s;
-}
-header nav ul li{
-    display: block;
-    float: none;
-    border-bottom: 1px solid rgba(255, 255, 255, .3);
-}
-.div-btn-menu{
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    height: 40px;
-    background: $blue;
-    padding: 15px 0 15px 0;
-    //  -webkit-box-sizing: border-box;
-    //  -moz-box-sizing: border-box;
-    // box-sizing: border-box;
-}
 .span{
     font-size: 15px;
     font-family: $font-rosario;
@@ -119,7 +72,7 @@ header nav ul li{
     height: 500px;
     position: absolute;
     background-position: center;
-    background-image: url(./assets/front-mobile.png);
+    background-image: url(../assets/front-mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
     filter: grayscale(0.2)
@@ -134,22 +87,6 @@ header nav ul li{
 .divInitButton{
     width: 100px;
     margin: 0 auto;
-}
-
-a:hover{
-background:rgb(197, 196, 196);
-color: rgb(27, 27, 27);
-font-weight: bold;
-}
-.icon-menu{
-    width: 25px;
-}
-.btn-menu{
-    background-color: transparent;
-    cursor: pointer;
-    position: absolute;
-    padding: 5px;
-    border: $white solid 1px;
 }
 .iconBlueKnow{
     width: 60px;
@@ -171,7 +108,6 @@ font-weight: bold;
 .myPhoto{
     width: 190px;
     height: 190px;
-    border: 5px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 200px;
     margin:auto;
@@ -250,17 +186,63 @@ font-weight: bold;
 
 @media screen and (min-width: 400px){
     .homeBackground:before{
-        background-image: url(./assets/front-desktop.png);
+        background-image: url(../assets/front-desktop.png);
     }
     .rasa{
         font-size: 68px;
         padding: 15px;
     }
-    .quicksand{
+    .quicksandTitle{
         font-size: 36px;
+    }
+    .quicksand{
+        font-size: 24px;
     }
     .divHome {
         top: 160px;
         right: 280px;
+    }
+    .divBySkill{
+        width: 180px;
+        // padding: 10px;
+        // margin-bottom: 30px;
+    }
+    .iconBlueKnow {
+        width: 100px;
+        height: 100px;
+    }
+    .myPhoto{
+        width: 250px;
+        height: 250px;
+    }
+    .divPhoto{
+        padding: 30px;
+        padding-left: 50px;
+    }
+    .contentAbout{
+        padding: 35px;
+        width: 600px;
+    }
+    .aboutDiv{
+        margin-bottom: 140px;
+    }
+    .divTechSkills{
+        max-width: 900px;
+        align-self: center;
+        margin-top: 60px;
+        margin-bottom: 130px;
+    }
+    .textCenter{
+        font-size: 40px;
+    }
+    .mrgnTechSkill {
+        margin: 25px 20px;
+    }
+    .spanBySkill {
+        font-size: 1.2em;
+    }
+    .listOfSkills {
+        max-width: 700px;
+        align-self: center;
     }
 }

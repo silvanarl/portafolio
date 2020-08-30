@@ -9,8 +9,10 @@ import { NavBar, ButtonMenu } from './NavBar';
 
 const App = () => (
   <div>
-    <header className="div-btn-menu">
-      <ButtonMenu />
+    <header className="headerNav">
+      <div className="div-btn-menu">
+        <ButtonMenu />
+      </div>
       <NavBar />
     </header>
     <main>
@@ -22,7 +24,7 @@ const App = () => (
       <section><Contact /></section>
     </main>
     <footer>
-      
+      <span>Creado por Silvana Ramos 2020</span>
     </footer>
   </div>
 );

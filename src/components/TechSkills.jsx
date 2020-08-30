@@ -11,7 +11,7 @@ import iconNodeJs from '../assets/techSkills/blue-node.svg';
 const Knowledge = () => (
   <div id="knowledge" className="flex column marginCont">
     <p className="textCenter mrg20">CONOCIMIENTOS</p>
-    <div className="divTechSkills">
+    <div className="divTechSkills center flex">
       <div className="column divBySkill mrgnTechSkill">
         <img src={iconHtml} alt="HTML" className="iconBlueKnow" />
         <span className="spanBySkill">HTML5</span>

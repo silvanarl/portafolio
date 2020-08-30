@@ -5,7 +5,7 @@ import iconMailContact from '../assets/contact/mail-contact.svg';
 import iconPhoneContact from '../assets/contact/phone-contact.svg';
 
 const Contact = () => (
-  <div>
+  <div id="contact">
     <p className="textCenter mrg20">CONTACTEMOS</p>
     <div>
       <img src={iconMailContact} alt="Mail" className="iconContact" />

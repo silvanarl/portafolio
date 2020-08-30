@@ -7,14 +7,12 @@ const buttonToggle = () => {
 
 export const ButtonMenu = () => (
   <div className="row end">
-    <div className="end">
-      <button type="button" onClick={buttonToggle} className="btn-menu"><img className="icon-menu" src={Menu} alt="menu" /></button>
-    </div>
+    <button type="button" onClick={buttonToggle} className="btn-menu"><img className="icon-menu" src={Menu} alt="menu" /></button>
   </div>
 );
 
 export const NavBar = () => (
-  <nav id="nav">
+  <nav id="nav" className="navbar">
     <ul>
       <li><a href="#home" onClick={buttonToggle}>INICIO</a></li>
       <li><a href="#about" onClick={buttonToggle}>SOBRE MI</a></li>
