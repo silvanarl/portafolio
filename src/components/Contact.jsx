@@ -35,7 +35,7 @@ const Contact = () => (
         </a>
       </div>
       <div className="contentCv">
-        <a href="src/assets/cvSilvanarl_Front-end.pdf" target="_blank">
+        <a href="assets/cvSilvanarl_Front-end.pdf" target="_blank">
           <input className="btnCv" type="submit" value="VER CV" />
         </a>
       </div>
