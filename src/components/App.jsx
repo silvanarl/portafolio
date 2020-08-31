@@ -23,7 +23,7 @@ const App = () => (
       <section><Projects /></section>
       <section><Contact /></section>
     </main>
-    <footer>
+    <footer className="footer">
       <span>Creado por Silvana Ramos 2020</span>
     </footer>
   </div>

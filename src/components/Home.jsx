@@ -1,5 +1,4 @@
 import React from 'react';
-import btnInit from '../assets/initButton.svg';
 
 const Home = () => (
   <div id="home" className="homeBackground">
@@ -8,7 +7,9 @@ const Home = () => (
       <h2 className="quicksandTitle quicksand">front-end developer</h2>
     </div>
     <div className="divInitBtn">
-      <a href="#about"><img className="initBtn column" src={btnInit} alt="boton seguir" /></a>
+      <a href="#about">
+        <input type="button" className="initBtn" value="Ver más" />
+      </a>
     </div>
   </div>
 );

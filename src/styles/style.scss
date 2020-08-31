@@ -78,11 +78,19 @@ body{
     filter: grayscale(0.2)
 }
 .initBtn{
-    border: none;
+    border: 2px solid $white;
+    font-family: $font-quicksand;
+    color: $white;
+    width: 80px;
+    height: 35px;
+    border-radius: 25px;
     background-color: transparent;
     position: absolute;
-    top: 310px;
-    left: 150px;
+    top: 320px;
+    left: 200px;
+}
+.initBtn:hover{
+    backdrop-filter: opacity(.5);
 }
 .divInitButton{
     width: 100px;
@@ -91,6 +99,7 @@ body{
 .iconBlueKnow{
     width: 60px;
     height: 60px;
+    margin-bottom: 7px;
 }
 .divTechSkills{
     display: $flex;
@@ -104,6 +113,12 @@ body{
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
+}
+.aboutDiv{
+    flex-direction: column;
+}
+.divPhoto{
+    align-self: center;
 }
 .myPhoto{
     width: 190px;
@@ -153,23 +168,35 @@ body{
     margin-top:50px;
 }
 .projectsDiv{
+    min-width: 320px;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 10px 30px 15px 45px;
+    justify-content: space-around;
+    // flex-wrap: wrap;
+    // justify-content: space-around;
+    // margin: 10px 30px 15px 45px;
 }
 .project{
     width: 120px;
     padding: 10px;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
 }
 .projectImg{
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.projectImg:hover{
+    filter: opacity(.5);
+}
+.infoProject{
+    margin-top: 10px;
 }
 .buttonDemo{
-    width: 43px;
-    height: 28px;
+    width: 50px;
+    height: 30px;
     margin:5px;
     background-color: $white;
     font-family: $font-rosario;
@@ -179,12 +206,54 @@ body{
     border: 2px solid $blue;
     font-weight: bold;
 }
+.buttonDemo:hover{
+    background-color: $blue;
+    color:$white;
+}
 .iconContact{
     width: 40px;
     height: 50px;
+    margin-right: 15px;
+}
+a:link{
+    text-decoration:none;
+}
+.contactDiv{
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.btnCv{
+    width: 80px;
+    height: 40px;
+    border: 2px solid $blue;
+    border-radius: 8px;
+    color: $blue;
+    font-weight: bold;
+}
+.btnCv:hover{
+    background-color: $blue;
+    color: $white;
+}
+.contentCv{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.footer{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    height: 25px;
+    background-color: $blue;
+    font-family: $font-quicksand;
+    font-size: 15px;
+    color: $white;
 }
 
-@media screen and (min-width: 400px){
+
+
+@media screen and (min-width: 600px){
     .homeBackground:before{
         background-image: url(../assets/front-desktop.png);
     }
@@ -218,10 +287,10 @@ body{
     .divPhoto{
         padding: 30px;
         padding-left: 50px;
+        align-self: center;
     }
     .contentAbout{
         padding: 35px;
-        width: 600px;
     }
     .aboutDiv{
         margin-bottom: 140px;
@@ -233,7 +302,7 @@ body{
         margin-bottom: 130px;
     }
     .textCenter{
-        font-size: 40px;
+        font-size: 38px;
     }
     .mrgnTechSkill {
         margin: 25px 20px;
@@ -241,8 +310,35 @@ body{
     .spanBySkill {
         font-size: 1.2em;
     }
-    .listOfSkills {
+    .listOfSkills{
         max-width: 700px;
         align-self: center;
+    }
+    .projectsDiv{
+        align-self: center;
+    }
+    .softImg{
+        width: 130px;
+        height: 130px;
+        margin-bottom: 15px;
+    }
+    .mrgSoftSkill{
+        margin: 15px 40px 40px;
+    }
+    .projectImg{
+        width: 150px;
+        height: 150px;
+    }
+    .project {
+        width: 180px;
+        margin: 40px;
+    }
+    .buttonDemo{
+        width: 70px;
+    }
+    .initBtn{
+        width: 100px;
+        height: 45px;
+        font-size: 18px;
     }
 }

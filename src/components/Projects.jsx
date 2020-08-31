@@ -10,64 +10,76 @@ const Projects = () => (
     <div className="flex projectsDiv">
       <div className="column project">
         <img src={cardCredit} alt="Tarjeta de Crédito" className="projectImg" />
-        <a
-          href="https://silvanarl.github.io/LIM012-card-validation/src/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="buttonDemo" type="button">Demo</button>
-        </a>
-        <a
-          href="https://github.com/silvanarl/LIM012-card-validation"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="buttonDemo" type="button">Repo</button>
-        </a>
+        <div className="infoProject column">
+          <p className="titleProject spanBySkill">CARD VALIDATION</p>
+          <a
+            href="https://silvanarl.github.io/LIM012-card-validation/src/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="buttonDemo" type="button">Demo</button>
+          </a>
+          <a
+            href="https://github.com/silvanarl/LIM012-card-validation"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <input type="button" className="buttonDemo" value="Repo" />
+          </a>
+        </div>
       </div>
       <div className="column project">
         <img src={pokedex} alt="Pokedex" className="projectImg" />
-        <a
-          href="https://github.com/silvanarl/LIM012-data-lovers"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="buttonDemo" type="button">Demo</button>
-        </a>
-        <a
-          href="https://silvanarl.github.io/LIM012-data-lovers/src/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="buttonDemo" type="button">Repo</button>
-        </a>
+        <div className="infoProject column">
+          <p className="titleProject spanBySkill">POKEDEX</p>
+          <a
+            href="https://github.com/silvanarl/LIM012-data-lovers"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="buttonDemo" type="button">Demo</button>
+          </a>
+          <a
+            href="https://silvanarl.github.io/LIM012-data-lovers/src/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="buttonDemo" type="button">Repo</button>
+          </a>
+        </div>
       </div>
       <div className="column project">
         <img src={mdLinks} alt="Md-Links" className="projectImg" />
-        <a
-          href="https://github.com/silvanarl/LIM012-fe-md-links"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="buttonDemo" type="button">Repo</button>
-        </a>
+        <div className="infoProject column">
+          <p className="titleProject spanBySkill">MD-LINKS</p>
+          <a
+            href="https://github.com/silvanarl/LIM012-fe-md-links"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="buttonDemo" type="button">Repo</button>
+          </a>
+        </div>
       </div>
       <div className="column project">
         <img src={roadtips} alt="Roadtips" className="projectImg" />
-        <a
-          href="https://github.com/silvanarl/LIM012-fe-social-network"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="buttonDemo" type="button">Demo</button>
-        </a>
-        <a
-          href="https://silvanarl.github.io/LIM012-fe-social-network/src/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="buttonDemo" type="button">Repo</button>
-        </a>
+        <div className="infoProject column">
+          <p className="titleProject spanBySkill">ROADTIPS</p>
+          <a
+            href="https://github.com/silvanarl/LIM012-fe-social-network"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="buttonDemo" type="button">Demo</button>
+          </a>
+          <a
+            href="https://silvanarl.github.io/LIM012-fe-social-network/src/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="buttonDemo" type="button">Repo</button>
+          </a>
+        </div>
       </div>
     </div>
   </div>

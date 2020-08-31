@@ -11,19 +11,19 @@ const Soft = () => (
     </div>
     <div className="listOfSkills">
       <div className="column divBySkill mrgSoftSkill">
-        <img src={iconSelfTaught} alt="Autodidacta" className="" />
+        <img src={iconSelfTaught} alt="Autodidacta" className="softImg" />
         <span className="spanBySkill">AUTODIDACTA</span>
       </div>
       <div className="column divBySkill mrgSoftSkill">
-        <img src={iconTeamWork} alt="Trabajo colaborativo" className="" />
+        <img src={iconTeamWork} alt="Trabajo colaborativo" className="softImg" />
         <span className="spanBySkill">TRABAJO COLABORATIVO</span>
       </div>
       <div className="column divBySkill mrgSoftSkill">
-        <img src={iconProblemSolving} alt="Resolución de problemas" className="" />
+        <img src={iconProblemSolving} alt="Resolución de problemas" className="softImg" />
         <span className="spanBySkill">RESOLUCIÓN DE PROBLEMAS</span>
       </div>
       <div className="column divBySkill mrgSoftSkill">
-        <img src={iconUncertainty} alt="Manejo de incertidumbre" className="" />
+        <img src={iconUncertainty} alt="Manejo de incertidumbre" className="softImg" />
         <span className="spanBySkill">MANEJO DE INCERTIDUMBRE</span>
       </div>
     </div>
