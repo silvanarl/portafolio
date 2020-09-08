@@ -9,7 +9,7 @@ import iconFirebase from '../assets/techSkills/blue-firebase.svg';
 import iconNodeJs from '../assets/techSkills/blue-node.svg';
 
 const Knowledge = () => (
-  <div id="knowledge" className="flex column marginCont">
+  <div id="knowledge" className="flex column paddCont">
     <p className="textCenter mrg20">CONOCIMIENTOS</p>
     <div className="divTechSkills center flex">
       <div className="column divBySkill mrgnTechSkill">

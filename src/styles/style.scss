@@ -54,7 +54,7 @@ body{
     color: $white;
 }
 .homeBackground{
-    width: 100vw;
+    // width: 100vw;
     height: 500px;
     display: $flex;
     position: relative;
@@ -87,7 +87,7 @@ body{
     background-color: transparent;
     position: absolute;
     top: 320px;
-    left: 200px;
+    // left: 200px;
 }
 .initBtn:hover{
     backdrop-filter: opacity(.5);
@@ -164,8 +164,8 @@ body{
 .mrg20{
     margin:20px;
 }
-.marginCont{
-    margin-top:50px;
+.paddCont{
+    padding-top:60px;
 }
 .projectsDiv{
     min-width: 320px;
@@ -269,7 +269,7 @@ a:link{
     }
     .divHome {
         top: 160px;
-        right: 280px;
+        // right: 280px;
     }
     .divBySkill{
         width: 180px;
@@ -291,6 +291,9 @@ a:link{
     }
     .contentAbout{
         padding: 35px;
+        max-width: 700px;
+        justify-content: center;
+        align-self: center;
     }
     .aboutDiv{
         margin-bottom: 140px;

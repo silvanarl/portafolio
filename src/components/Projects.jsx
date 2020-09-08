@@ -5,7 +5,7 @@ import pokedex from '../assets/projects/pokedex.png';
 import cardCredit from '../assets/projects/cardCredit.png';
 
 const Projects = () => (
-  <div id="projects">
+  <div id="projects" className="paddCont">
     <p className="textCenter mrg20">PROYECTOS</p>
     <div className="flex projectsDiv">
       <div className="column project">
