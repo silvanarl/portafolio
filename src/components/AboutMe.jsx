@@ -2,7 +2,7 @@ import React from 'react';
 import myPhoto from '../assets/myPhoto.png';
 
 const About = () => (
-  <div id="about" className="homeMobile marginCont">
+  <div id="about" className="homeMobile paddCont">
     <div className="mrg20">
       <p className="textCenter">ACERCA DE MI</p>
     </div>

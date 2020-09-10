@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://github.com/silvanarl/Portafolio_silvanarl",
   "scripts": {
     "test": "test",
     "start": "webpack-dev-server --config webpack.config.js -d",
@@ -26,7 +27,6 @@
   "bugs": {
     "url": "https://github.com/silvanarl/Portafolio_silvanarl/issues"
   },
-  "homepage": "https://github.com/silvanarl/Portafolio_silvanarl",
   "devDependencies": {
     "eslint": "^7.5.0",
     "eslint-config-airbnb": "^18.2.0",

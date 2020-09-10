@@ -5,7 +5,7 @@ import iconTeamWork from '../assets/softSkills/teamWork.svg';
 import iconUncertainty from '../assets/softSkills/uncertaintyManagement.svg';
 
 const Soft = () => (
-  <div id="skills" className="flex column marginCont">
+  <div id="skills" className="flex column paddCont">
     <div className="mrg20">
       <p className="textCenter">HABILIDADES</p>
     </div>

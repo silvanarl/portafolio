@@ -13,7 +13,7 @@ export const ButtonMenu = () => (
 
 export const NavBar = () => (
   <nav id="nav" className="navbar">
-    <ul>
+    <ul className="ulNav">
       <li><a href="#home" onClick={buttonToggle}>INICIO</a></li>
       <li><a href="#about" onClick={buttonToggle}>SOBRE MI</a></li>
       <li><a href="#knowledge" onClick={buttonToggle}>CONOCIMIENTOS</a></li>

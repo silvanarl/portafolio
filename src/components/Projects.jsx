@@ -5,7 +5,7 @@ import pokedex from '../assets/projects/pokedex.png';
 import cardCredit from '../assets/projects/cardCredit.png';
 
 const Projects = () => (
-  <div id="projects">
+  <div id="projects" className="paddCont">
     <p className="textCenter mrg20">PROYECTOS</p>
     <div className="flex projectsDiv">
       <div className="column project">
@@ -33,14 +33,14 @@ const Projects = () => (
         <div className="infoProject column">
           <p className="titleProject spanBySkill">POKEDEX</p>
           <a
-            href="https://github.com/silvanarl/LIM012-data-lovers"
+            href="https://silvanarl.github.io/LIM012-data-lovers/src/"
             target="_blank"
             rel="noreferrer"
           >
             <button className="buttonDemo" type="button">Demo</button>
           </a>
           <a
-            href="https://silvanarl.github.io/LIM012-data-lovers/src/"
+            href="https://github.com/silvanarl/LIM012-data-lovers/"
             target="_blank"
             rel="noreferrer"
           >
@@ -66,14 +66,14 @@ const Projects = () => (
         <div className="infoProject column">
           <p className="titleProject spanBySkill">ROADTIPS</p>
           <a
-            href="https://github.com/silvanarl/LIM012-fe-social-network"
+            href="https://silvanarl.github.io/LIM012-fe-social-network/src/#/"
             target="_blank"
             rel="noreferrer"
           >
             <button className="buttonDemo" type="button">Demo</button>
           </a>
           <a
-            href="https://silvanarl.github.io/LIM012-fe-social-network/src/"
+            href="https://github.com/silvanarl/LIM012-fe-social-network"
             target="_blank"
             rel="noreferrer"
           >

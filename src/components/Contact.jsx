@@ -5,7 +5,7 @@ import iconMailContact from '../assets/contact/mail-contact.svg';
 import iconPhoneContact from '../assets/contact/phone-contact.svg';
 
 const Contact = () => (
-  <div id="contact">
+  <div id="contact" className="paddCont">
     <p className="textCenter mrg20">CONTACTEMOS</p>
     <div className="contactDiv">
       <div className="center">
@@ -35,7 +35,7 @@ const Contact = () => (
         </a>
       </div>
       <div className="contentCv">
-        <a href="src/assets/cvSilvanarl_Front-end.pdf" target="_blank">
+        <a href="assets/cvSilvanarl_Front-end.pdf" target="_blank">
           <input className="btnCv" type="submit" value="VER CV" />
         </a>
       </div>
