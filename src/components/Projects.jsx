@@ -1,87 +1,55 @@
-import React from 'react';
-import mdLinks from '../assets/projects/md-links.png';
-import roadtips from '../assets/projects/roadtips.png';
-import pokedex from '../assets/projects/pokedex.png';
-import cardCredit from '../assets/projects/cardCredit.png';
+import React, { useState, useEffect } from 'react';
 
-const Projects = () => (
-  <div id="projects" className="paddCont">
-    <p className="textCenter mrg20">PROYECTOS</p>
-    <div className="flex projectsDiv">
-      <div className="column project">
-        <img src={cardCredit} alt="Tarjeta de Crédito" className="projectImg" />
-        <div className="infoProject column">
-          <p className="titleProject spanBySkill">CARD VALIDATION</p>
-          <a
-            href="https://silvanarl.github.io/LIM012-card-validation/src/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="buttonDemo" type="button">Demo</button>
-          </a>
-          <a
-            href="https://github.com/silvanarl/LIM012-card-validation"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <input type="button" className="buttonDemo" value="Repo" />
-          </a>
-        </div>
-      </div>
-      <div className="column project">
-        <img src={pokedex} alt="Pokedex" className="projectImg" />
-        <div className="infoProject column">
-          <p className="titleProject spanBySkill">POKEDEX</p>
-          <a
-            href="https://silvanarl.github.io/LIM012-data-lovers/src/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="buttonDemo" type="button">Demo</button>
-          </a>
-          <a
-            href="https://github.com/silvanarl/LIM012-data-lovers/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="buttonDemo" type="button">Repo</button>
-          </a>
-        </div>
-      </div>
-      <div className="column project">
-        <img src={mdLinks} alt="Md-Links" className="projectImg" />
-        <div className="infoProject column">
-          <p className="titleProject spanBySkill">MD-LINKS</p>
-          <a
-            href="https://github.com/silvanarl/LIM012-fe-md-links"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="buttonDemo" type="button">Repo</button>
-          </a>
-        </div>
-      </div>
-      <div className="column project">
-        <img src={roadtips} alt="Roadtips" className="projectImg" />
-        <div className="infoProject column">
-          <p className="titleProject spanBySkill">ROADTIPS</p>
-          <a
-            href="https://silvanarl.github.io/LIM012-fe-social-network/src/#/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="buttonDemo" type="button">Demo</button>
-          </a>
-          <a
-            href="https://github.com/silvanarl/LIM012-fe-social-network"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="buttonDemo" type="button">Repo</button>
-          </a>
+const Projects = () => {
+  const [project, setProject] = useState([]);
+
+  useEffect(() => {
+    fetch('../../public/projects.json')
+      .then((response) => response.json())
+      .then((obj) => {
+        setProject(obj.projects);
+      });
+  }, []);
+
+  return (
+    <div id="projects" className="paddCont">
+      <p className="textCenter mrg20">PROYECTOS</p>
+      <div className=" grid_projects">
+        <div className="grid">
+          {/* flex projectsDiv (clases) */}
+          {project.map((obj) => (
+            <div className="grid__item" key={obj.id}>
+              {/* column project hvr-bob */}
+              <div className="card">
+                <img src={obj.image} alt={obj.title} className="card__img" />
+                <div className="card__content">
+                  {/* infoProject column */}
+                  <h1 className="card__header">{obj.title}</h1>
+                  {/* titleProject spanBySkill */}
+                  <p className="card__text">{obj.description}</p>
+                  <a
+                    href={obj.demo}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="card__btn" type="button">Demo</button>
+                    {/* buttonDemo */}
+                  </a>
+                  <a
+                    href={obj.repo}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <input type="button" className="card__btn" value="Repo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
+
 export default Projects;
