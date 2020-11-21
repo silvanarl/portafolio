@@ -6,7 +6,7 @@ const Projects = () => {
   const [project, setProject] = useState([]);
 
   useEffect(() => {
-    fetch('../../public/projects.json')
+    fetch('../projects.json')
       .then((response) => response.json())
       .then((obj) => {
         setProject(obj.projects);
@@ -18,16 +18,12 @@ const Projects = () => {
       <p className="textCenter mrg20">PROYECTOS</p>
       <div className=" grid_projects">
         <div className="grid">
-          {/* flex projectsDiv (clases) */}
           {project.map((obj) => (
             <div className="grid__item" key={obj.id}>
-              {/* column project hvr-bob */}
               <div className="card">
                 <img src={obj.image} alt={obj.title} className="card__img" />
                 <div className="card__content">
-                  {/* infoProject column */}
                   <h1 className="card__header">{obj.title}</h1>
-                  {/* titleProject spanBySkill */}
                   <p className="card__text">{obj.description}</p>
                   <a
                     href={obj.demo}
