@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import monitor from '../assets/monitor.svg';
+import githubBlue from '../assets/github-blue.svg';
 
 const Projects = () => {
   const [project, setProject] = useState([]);
@@ -32,15 +34,30 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <button className="card__btn" type="button">Demo</button>
-                    {/* buttonDemo */}
+                    <button
+                      className="card__btn"
+                      type="button"
+                    >
+                      Demo
+                      <span>
+                        <img src={monitor} alt="" />
+                      </span>
+                    </button>
                   </a>
                   <a
                     href={obj.repo}
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <input type="button" className="card__btn" value="Repo" />
+                    <button
+                      className="card__btn"
+                      type="button"
+                    >
+                      Repo
+                      <span>
+                        <img src={githubBlue} alt="" />
+                      </span>
+                    </button>
                   </a>
                 </div>
               </div>

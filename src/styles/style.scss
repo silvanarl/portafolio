@@ -236,18 +236,25 @@ a:link{
     margin-bottom: 0;
     padding-bottom: 10px;
 }
+.contact-title{
+    font-family: $font-rosario;
+    color: $white;
+    font-weight: 500;
+    margin: 0 2rem;
+}
 .btnCv{
-    width: 60px;
-    height: 60px;
-    border: 2px solid $blue;
-    border-radius: 50%;
-    color: $blue;
-    font-weight: bold;
+    width: 8rem;
+    height: 3rem;
+    border: 2px solid #3A4454;
+    border-radius: .7rem;
+    color: #3A4454;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
 }
 .btnCv:hover{
-    background-color: $blue;
-    color: $white;
-    border-radius: 50%;
+    // background-color: #4c4d4e21;
+    // color: $white;
 }
 .contentCv{
     display: flex;
