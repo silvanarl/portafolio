@@ -9,6 +9,7 @@ const Projects = () => {
     fetch('../projects.json')
       .then((response) => response.json())
       .then((obj) => {
+        console.log(obj.projects);
         setProject(obj.projects);
       });
   }, []);
