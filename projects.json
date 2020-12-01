@@ -1,0 +1,49 @@
+
+{
+    "projects": [
+        {
+            "id": "0",
+            "cover": "http://drive.google.com/uc?export=view&id=11zsSJNcfAUUDDbPj_QWeXpKwdxMWLQfP",
+            "cover_2": "http://drive.google.com/uc?export=view&id=1bbr719co5_dQGsMqHZHB151limOyvj4E",
+            "name": "pokemon",
+            "image": "https://raw.githubusercontent.com/silvanarl/LIM012-data-lovers/master/src/img/pokedex.png",
+            "description":"Aplicación web para todxs lxs amantes del juego Pokemon Go, donde encontrarán información acerca de los pokemones y como ganar en los combates.",
+            "demo": "https://silvanarl.github.io/LIM012-data-lovers/src/",
+            "repo": "https://github.com/silvanarl/LIM012-data-lovers/",
+            "title": "POKEDEX"
+        },
+        {
+            "id": "1",
+            "cover": "http://drive.google.com/uc?export=view&id=1njZeEDKRlsKj8Hxe1qGayIXC3agloM_W",
+            "cover_2": "http://drive.google.com/uc?export=view&id=1njZeEDKRlsKj8Hxe1qGayIXC3agloM_W",
+            "name": "roadtips",
+            "image": "https://raw.githubusercontent.com/silvanarl/LIM012-fe-social-network/master/src/img/loginDesktop.png",
+            "description":"RoadTips es una red social para amantes de los viajes que deseen compartir sus experiencias y aventuras por el mundo.",   
+            "demo": "https://silvanarl.github.io/LIM012-fe-social-network/src/#/",
+            "repo": "https://github.com/silvanarl/LIM012-fe-social-network",
+            "title": "ROADTIPS"
+        },
+        {
+            "id": "2",
+            "cover": "http://drive.google.com/uc?export=view&id=1NrHRy86ANmx-B3pWIljOJ902XK9jcPuB",
+            "cover_2": "http://drive.google.com/uc?export=view&id=1bbr719co5_dQGsMqHZHB151limOyvj4E",
+            "name": "md-links",
+            "image": "https://raw.githubusercontent.com/silvanarl/LIM012-fe-md-links/master/test/img/backend.jpg",
+            "description": "Librería que permite validar links dentro de archivos markdown.",
+            "demo": "https://github.com/silvanarl/LIM012-fe-md-links",
+            "repo": "https://github.com/silvanarl/LIM012-fe-md-links",
+            "title": "MD-LINKS"
+        },
+        {
+            "id": "3",
+            "cover": "",
+            "cover_2": "http://drive.google.com/uc?export=view&id=1bbr719co5_dQGsMqHZHB151limOyvj4E",
+            "name": "",
+            "image": "http://drive.google.com/uc?export=view&id=12Nx1r2irOYgUFcR7nH_qJFltXdFw1OKz",
+            "description": "PWA realizada con React que sirve para tomar pedidos de un restaurante, enviar a cocina, revisar los pedidos listos y marcarlos como entregados.",
+            "demo": "https://burger-queen-16c95.web.app/",
+            "repo": "",
+            "title": "Burger Queen"
+        }
+    ]
+}
