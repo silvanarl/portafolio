@@ -9,29 +9,37 @@ const Contact = () => (
     {/* <p className="textCenter mrg20">CONTACTEMOS</p> */}
     <h1 className="contact-title">PUEDES CONTACTARME EN:</h1>
     <div className="contactDiv">
-      <div className="center">
+      <div className="flex container-link-contact">
         <a href="mailto:ramossilvana495@gmail.com">
           <img src={iconMailContact} alt="Mail" className="iconContact" />
+        </a>
+        <a className="link-contact" href="mailto:ramossilvana495@gmail.com">
           <span className="quicksand textC">
             ramossilvana495@gmail.com
           </span>
         </a>
       </div>
-      <div className="center">
+      <div className="flex container-link-contact">
         <a href="tel:+01957298663" title="llamar">
           <img src={iconPhoneContact} alt="Phone" className="iconContact" />
+        </a>
+        <a className="link-contact" href="tel:+01957298663" title="llamar">
           <span className="quicksand textC">957298663</span>
         </a>
       </div>
-      <div className="center">
-        <img src={iconGithubContact} alt="Github" className="iconContact" />
+      <div className="flex container-link-contact">
         <a href="https://github.com/silvanarl" target="_blank" rel="noreferrer">
+          <img src={iconGithubContact} alt="Github" className="iconContact" />
+        </a>
+        <a className="link-contact" href="https://github.com/silvanarl" target="_blank" rel="noreferrer">
           <span className="quicksand textC">silvanarl</span>
         </a>
       </div>
-      <div className="center">
-        <img src={iconLinkedinContact} alt="Linkedin" className="iconContact" />
+      <div className="flex container-link-contact">
         <a href="https://linkedin.com/in/silvanaramoslescano/" target="_blank" rel="noreferrer">
+          <img src={iconLinkedinContact} alt="Linkedin" className="iconContact" />
+        </a>
+        <a className=" link-contact" href="https://linkedin.com/in/silvanaramoslescano/" target="_blank" rel="noreferrer">
           <span className="quicksand textC">silvanaramoslescano</span>
         </a>
       </div>

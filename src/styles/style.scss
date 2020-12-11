@@ -245,16 +245,21 @@ a:link{
 .btnCv{
     width: 8rem;
     height: 3rem;
-    border: 2px solid #3A4454;
-    border-radius: .7rem;
-    color: #3A4454;
-    font-weight: 700;
-    font-size: 1rem;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-family: $font-rosario;
     cursor: pointer;
+    background-color: #3A4454;
 }
-.btnCv:hover{
-    // background-color: #4c4d4e21;
-    // color: $white;
+.container-link-contact{
+    height: 3rem;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+.link-contact{
+    padding-top: 1.2rem;
 }
 .contentCv{
     display: flex;
