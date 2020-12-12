@@ -9,7 +9,7 @@ const Projects = () => {
     fetch('../projects.json')
       .then((response) => response.json())
       .then((obj) => {
-        console.log(obj.projects);
+        // console.log(obj.projects);
         setProject(obj.projects);
       });
   }, []);
@@ -26,36 +26,38 @@ const Projects = () => {
                 <div className="card__content">
                   <h1 className="card__header">{obj.title}</h1>
                   <p className="card__text">{obj.description}</p>
-                  <a
-                    href={obj.demo}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button
-                      className="card__btn"
-                      type="button"
+                  <div className="flex around">
+                    <a
+                      href={obj.demo}
+                      target="_blank"
+                      rel="noreferrer"
                     >
-                      Demo
-                      <span>
-                        <img src={monitor} alt="" />
-                      </span>
-                    </button>
-                  </a>
-                  <a
-                    href={obj.repo}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button
-                      className="card__btn"
-                      type="button"
+                      <button
+                        className="card__btn"
+                        type="button"
+                      >
+                        Website
+                        <span>
+                          <img src={monitor} alt="" />
+                        </span>
+                      </button>
+                    </a>
+                    <a
+                      href={obj.repo}
+                      target="_blank"
+                      rel="noreferrer"
                     >
-                      Repo
-                      <span>
-                        <img src={githubBlue} alt="" />
-                      </span>
-                    </button>
-                  </a>
+                      <button
+                        className="card__btn"
+                        type="button"
+                      >
+                        Repositorio
+                        <span>
+                          <img src={githubBlue} alt="" />
+                        </span>
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

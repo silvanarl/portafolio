@@ -43,11 +43,34 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 6rem;
+    padding: 2.5rem;
     // background-color: #f5f5f5;
     font-family: "Inter", sans-serif;
     @include media(360px) {
-      // background: red;
+      .grid{
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+      }
+      .card{
+        &__header{
+          font-size: 1rem;
+          font-weight: 500;
+        }
+        &__content{
+          padding: 1.2rem;
+        }
+        &__text{
+          font-size: .8rem;
+        }
+        &__btn{
+          padding: .3rem;
+          font-size: 1rem;
+        }
+        span{
+          img{
+            height: 22px;
+          }
+        }
+      }
     }
     @include media(small) {
         // padding: 0.5rem;
@@ -88,7 +111,6 @@
     &__img {
       display: block;
       width: 100%;
-      // height: 18rem;
       object-fit: cover;
      }
     
@@ -113,9 +135,8 @@
     
     &__btn {
       display: block;
-      width: 50%;
-      padding: 1rem;
-      font-size: 2rem;
+      padding: .5rem;
+      font-size: 1.5rem;
       text-align: center;
       color: $color-btn-text;
       background-color: $color-btn-background;

@@ -10,7 +10,7 @@
     "dev": "webpack --config webpack.config.js -d",
     "build": "webpack --config webpack.config.js -p",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run predeploy && gh-pages -d build"
   },
   "repository": {
     "type": "git",

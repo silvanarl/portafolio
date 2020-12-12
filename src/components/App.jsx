@@ -24,7 +24,7 @@ const App = () => (
       <section><Contact /></section>
     </main>
     <footer className="footer">
-      <span>Creado por Silvana Ramos 2020</span>
+      <span>Silvana Ramos 2020&copy;</span>
     </footer>
   </div>
 );

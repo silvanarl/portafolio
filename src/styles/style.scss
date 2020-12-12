@@ -20,6 +20,9 @@ body{
 .end{
     align-items: flex-end;
 }
+.around{
+    justify-content: space-around;
+}
 .row{
     flex-direction: row;
 }

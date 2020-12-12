@@ -42,7 +42,7 @@
             "image": "http://drive.google.com/uc?export=view&id=12Nx1r2irOYgUFcR7nH_qJFltXdFw1OKz",
             "description": "PWA realizada con React que sirve para tomar pedidos de un restaurante, enviar a cocina, revisar los pedidos listos y marcarlos como entregados.",
             "demo": "https://burger-queen-16c95.web.app/",
-            "repo": "",
+            "repo": "https://github.com/silvanarl/LIM012-fe-burger-queen",
             "title": "Burger Queen"
         }
     ]
