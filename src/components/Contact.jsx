@@ -20,11 +20,11 @@ const Contact = () => (
         </a>
       </div>
       <div className="flex container-link-contact">
-        <a href="tel:+01957298663" title="llamar">
+        <a href="tel:+01974645351" title="llamar">
           <img src={iconPhoneContact} alt="Phone" className="iconContact" />
         </a>
         <a className="link-contact" href="tel:+01957298663" title="llamar">
-          <span className="quicksand textC">957298663</span>
+          <span className="quicksand textC">974645351</span>
         </a>
       </div>
       <div className="flex container-link-contact">
@@ -44,7 +44,7 @@ const Contact = () => (
         </a>
       </div>
       <div className="contentCv">
-        <a href="http://drive.google.com/uc?export=view&id=1M_9evNZU1VrdnMqAy7s8jc0dXb3PlmX8" target="_blank">
+        <a href="http://drive.google.com/uc?export=view&id=10QDZuc4778KTK4sKt4_q-Wdx3aMaSQ3E" target="_blank" rel="noreferrer">
           <button className="btnCv" type="button">Ver CV</button>
         </a>
       </div>
