@@ -23,7 +23,7 @@ const Contact = () => (
         <a href="tel:+01974645351" title="llamar">
           <img src={iconPhoneContact} alt="Phone" className="iconContact" />
         </a>
-        <a className="link-contact" href="tel:+01957298663" title="llamar">
+        <a className="link-contact" href="tel:+01974645351" title="llamar">
           <span className="quicksand textC">974645351</span>
         </a>
       </div>
